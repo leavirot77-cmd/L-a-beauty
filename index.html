@@ -5,6 +5,158 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Léa Beauty</title>
+
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #fffafb;
+color: #3b252c;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 22px 7%;
+background: #ffffff;
+border-bottom: 1px solid #f3dfe5;
+position: sticky;
+top: 0;
+z-index: 10;
+}
+
+.logo {
+font-size: 28px;
+font-weight: bold;
+color: #b76e79;
+}
+
+nav a {
+margin-left: 28px;
+text-decoration: none;
+color: #5a3b42;
+font-size: 15px;
+}
+
+.hero {
+min-height: 78vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 70px 20px;
+background: linear-gradient(135deg, #fff4f7, #f7dce4);
+}
+
+.hero small {
+text-transform: uppercase;
+letter-spacing: 4px;
+color: #a65f6b;
+margin-bottom: 18px;
+}
+
+.hero h1 {
+font-family: Georgia, serif;
+font-size: 72px;
+font-weight: normal;
+margin: 0;
+color: #6d3d48;
+}
+
+.hero p {
+font-size: 20px;
+max-width: 550px;
+line-height: 1.6;
+margin: 22px 0 35px;
+}
+
+.button {
+display: inline-block;
+padding: 16px 38px;
+background: #9f5b68;
+color: white;
+text-decoration: none;
+border-radius: 40px;
+font-size: 16px;
+}
+
+.products {
+padding: 80px 7%;
+text-align: center;
+}
+
+.products h2 {
+font-family: Georgia, serif;
+font-size: 42px;
+font-weight: normal;
+color: #6d3d48;
+}
+
+.products-intro {
+color: #80656c;
+margin-bottom: 45px;
+}
+
+.product-grid {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+}
+
+.product {
+width: 280px;
+min-height: 230px;
+padding: 35px 25px;
+background: white;
+border-radius: 22px;
+border: 1px solid #f1dce2;
+}
+
+.product h3 {
+font-family: Georgia, serif;
+font-size: 23px;
+color: #70404b;
+}
+
+.product p {
+color: #80656c;
+line-height: 1.6;
+}
+
+footer {
+padding: 35px;
+text-align: center;
+background: #6d3d48;
+color: white;
+}
+
+@media (max-width: 700px) {
+header {
+flex-direction: column;
+gap: 15px;
+}
+
+nav a {
+margin: 0 8px;
+}
+
+.hero h1 {
+font-size: 48px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
 <div class="logo">Léa Beauty ✨</div>
 
 <nav>
@@ -15,31 +167,49 @@
 </header>
 
 <section class="hero">
+
+<small>Bienvenue chez</small>
+
 <h1>Léa Beauty</h1>
-<p>La beauté commence ici ✨</p>
+
+<p>
+Un univers dédié à la beauté, à l'élégance
+et à la confiance en soi.
+</p>
 
 <a href="#produits" class="button">Découvrir</a>
+
 </section>
 
 <section class="products" id="produits">
 
-<h2>Nos produits</h2>
+<h2>Notre univers</h2>
+
+<p class="products-intro">
+Découvrez bientôt notre sélection de produits beauté.
+</p>
 
 <div class="product-grid">
 
 <div class="product">
-<h3>Produit beauté</h3>
-<p>Découvrez bientôt notre sélection.</p>
+<h3>Beauté</h3>
+<p>
+Une sélection pensée pour révéler votre beauté.
+</p>
 </div>
 
 <div class="product">
-<h3>Nouveauté</h3>
-<p>Un nouvel article arrive bientôt.</p>
+<h3>Élégance</h3>
+<p>
+Des produits choisis avec soin pour votre quotidien.
+</p>
 </div>
 
 <div class="product">
-<h3>Best-seller</h3>
-<p>Notre produit phare arrive bientôt.</p>
+<h3>Bientôt disponible</h3>
+<p>
+Notre première collection arrive prochainement.
+</p>
 </div>
 
 </div>
