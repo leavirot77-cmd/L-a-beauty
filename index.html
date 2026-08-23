@@ -3,69 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ma première page</title>
+<title>Ma première boutique</title>
 
 <style>
 body {
 margin: 0;
 font-family: Arial, sans-serif;
-background: linear-gradient(135deg, #f8d7e8, #d8c7ff);
-min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
+background: linear-gradient(135deg, #f8e8ee, #f5d6df);
+color: #333;
+text-align: center;
 }
 
-.carte {
-background: white;
-width: 80%;
-max-width: 600px;
-padding: 50px;
-border-radius: 25px;
-text-align: center;
-box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+.hero {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 30px;
+box-sizing: border-box;
 }
 
 h1 {
-color: #8e44ad;
-font-size: 42px;
+font-size: 52px;
 margin-bottom: 15px;
 }
 
 p {
-color: #555;
-font-size: 18px;
-line-height: 1.6;
+font-size: 20px;
+margin-bottom: 30px;
 }
 
-button {
-background: #8e44ad;
-color: white;
-border: none;
+.button {
+display: inline-block;
 padding: 15px 30px;
+background: #333;
+color: white;
+text-decoration: none;
 border-radius: 30px;
-font-size: 17px;
-cursor: pointer;
-margin-top: 20px;
+font-size: 18px;
 }
 
-button:hover {
-background: #6c3483;
+.button:hover {
+transform: scale(1.05);
 }
 </style>
 </head>
 
 <body>
 
-<div class="carte">
+<div class="hero">
 <h1>Bienvenue ✨</h1>
 
 <p>
-Voici ma première vraie interface web.
-Elle est créée avec HTML et CSS.
+Découvrez mon univers.
 </p>
 
-<button>Découvrir</button>
+<a href="#" class="button">Découvrir</a>
 </div>
 
 </body>
